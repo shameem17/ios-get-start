@@ -1,0 +1,6 @@
+framework module Pods_AllinOne_AllinOneUITests {
+  umbrella header "Pods-AllinOne-AllinOneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
