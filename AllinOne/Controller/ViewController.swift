@@ -19,33 +19,11 @@ class ViewController: UIViewController {
     var city = [City]()
     var isCalled: Bool = false
     
-    public func activityIndicator(style: UIActivityIndicatorView.Style = .medium,
-                                  frame: CGRect? = nil,
-                                  center: CGPoint? = nil) -> UIActivityIndicatorView {
-        
-        // 2
-        let activityIndicatorView = UIActivityIndicatorView(style: style)
-        
-        // 3
-        if let frame = frame {
-            activityIndicatorView.frame = frame
-        }
-        
-        // 4
-        if let center = center {
-            activityIndicatorView.center = center
-        }
-        
-        // 5
-        return activityIndicatorView
-    }
-    
-    
-    
+
     func  getData(){
         print("getData Called")
         isCalled = true
-        let indicatorView = activityIndicator(style: .large,
+        let indicatorView = AllinOne.activityIndicator(style: .large,
                                               center: self.view.center)
         
         indicatorView.stopAnimating()
@@ -91,7 +69,7 @@ class ViewController: UIViewController {
         if(isCalled == false)
         {
             isCalled = true
-            let indicatorView = activityIndicator(style: .large,
+            let indicatorView = AllinOne.activityIndicator(style: .large,
                                                   center: self.view.center)
             
             indicatorView.stopAnimating()
@@ -156,7 +134,7 @@ class ViewController: UIViewController {
         if(isCalled == false)
         {
             isCalled = true
-            let indicatorView = activityIndicator(style: .large,
+            let indicatorView = AllinOne.activityIndicator(style: .large,
                                                   center: self.view.center)
             
             indicatorView.stopAnimating()
@@ -225,33 +203,7 @@ class ViewController: UIViewController {
     }
    
     // MARK: - Effective Json Parsing
-    func newJson() {
-        
-        let indicatorView = activityIndicator(style: .large,
-                                              center: self.view.center)
-        
-        indicatorView.stopAnimating()
-        
-        self.view.addSubview(indicatorView)
-        indicatorView.startAnimating()
-        indicatorView.hidesWhenStopped = true
-        
-        
-        let url = NSURL(string: "https://restcountries.com/v3.1/all")
-        let data = NSData(contentsOf: url! as URL)
-        if(data != nil)
-        {
-            var temp = try! JSONSerialization.jsonObject(with: data! as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
-            temp = temp.reversed() as NSArray
-            country = try! JSONDecoder().decode([Country].self, from: data! as Data)
-            indicatorView.stopAnimating()
-        }
-        else
-        {
-            showToast(message: "Error in API call", font: .systemFont(ofSize: 18.3))
-        }
-        
-    }
+ 
     
     
     

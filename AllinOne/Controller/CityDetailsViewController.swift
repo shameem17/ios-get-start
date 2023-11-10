@@ -67,31 +67,10 @@ class CityDetailsViewController: UIViewController {
         }
         return 9
     }
-    
-    public func activityIndicator(style: UIActivityIndicatorView.Style = .medium,
-                                  frame: CGRect? = nil,
-                                  center: CGPoint? = nil) -> UIActivityIndicatorView {
-        
-        // 2
-        let activityIndicatorView = UIActivityIndicatorView(style: style)
-        
-        // 3
-        if let frame = frame {
-            activityIndicatorView.frame = frame
-        }
-        
-        // 4
-        if let center = center {
-            activityIndicatorView.center = center
-        }
-        
-        // 5
-        return activityIndicatorView
-    }
-    
+
     func  getWeather(latitude: Double, longitude: Double){
         
-        let indicatorView = self.activityIndicator(style: .large,
+        let indicatorView = activityIndicator(style: .large,
                                                    center: self.view.center)
         
         self.view.addSubview(indicatorView)

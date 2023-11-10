@@ -32,11 +32,7 @@ struct Activity: Codable {
 
 struct ActivityDetails: Codable {
     
-//    var name: String
-//    var description: String
-    //    var geoCode: GeoCode
-    //    var price: Price
-    //    var pictures: [String]
+
     var bookingLink: String
     var minimumDuration: String
 }

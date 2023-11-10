@@ -21,23 +21,11 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         let latitude:CLLocationDegrees = CLLocationDegrees (lat)     //23.803612692466704
                let longitude:CLLocationDegrees = CLLocationDegrees (long)
-               centreMap(latitude: latitude, longitude: longitude)
-//        centreMap(location: location)
-        
-        // Do any additional setup after loading the view.
+        centreMap(latitude: latitude, longitude: longitude,mapView: mapView, cityName: cityName,region_radious: region_radious)
+
     }
     
-    func centreMap(latitude: CLLocationDegrees, longitude: CLLocationDegrees){
-         let location = CLLocation(latitude: latitude, longitude: longitude)
-         let region = MKCoordinateRegion(center: location.coordinate,latitudinalMeters: CLLocationDistance(region_radious), longitudinalMeters: CLLocationDistance(region_radious))
-         mapView.setRegion(region, animated: true)
-         let loc: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-         let annotation: MKPointAnnotation = MKPointAnnotation()
-         annotation.coordinate = loc
-         annotation.title = cityName
-         //        annotation.subtitle = "Capital of Bangladesh"
-         self.mapView.addAnnotation(annotation)
-     }
+
     
     
 }

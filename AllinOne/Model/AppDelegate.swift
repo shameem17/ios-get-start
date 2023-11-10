@@ -12,21 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
-    var loged_in = false
-    var country = [Country]()
-    func newJson() {
-        let url = NSURL(string: "https://restcountries.com/v3.1/all")
-        
-        let data = NSData(contentsOf: url! as URL)
-        var tmpValues = try! JSONSerialization.jsonObject(with: data! as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
-        tmpValues = tmpValues.reversed() as NSArray
-        //             reloadInputViews()
-        country = try! JSONDecoder().decode([Country].self, from: data! as Data)
-    }
-    
+  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //      newJson()
+    
         return true
     }
     

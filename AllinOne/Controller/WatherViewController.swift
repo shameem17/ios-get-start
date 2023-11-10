@@ -12,21 +12,12 @@ import NotificationCenter
 import DropDown
 
 
-
-
-
-struct Town: Decodable {
-    var name: String
-}
-
-
-
 class WatherViewController: UIViewController {
     var country = ""
     var showCountry = ""
     var weather: Weather!
     var countryCode = ""
-    var cities = [Town]()
+
     var city = [City]()
     var myDropDown = DropDown()
     var cityList = [String]()
@@ -44,32 +35,6 @@ class WatherViewController: UIViewController {
     @IBOutlet weak var searchText: UITextField!
     @IBOutlet weak var myDropDownView: UIView!
     
-    func formater( name: String)-> String{
-        var temp = name
-        temp = temp.replacingOccurrences(of: "ā", with: "a")
-        temp = temp.replacingOccurrences(of: "ī", with: "i")
-        temp = temp.replacingOccurrences(of: "ū", with: "u")
-        temp = temp.replacingOccurrences(of: "Ā", with: "A")
-        
-        temp = temp.replacingOccurrences(of: "Č", with: "C")
-        temp = temp.replacingOccurrences(of: "č", with: "c")
-        temp = temp.replacingOccurrences(of: "Ē", with: "E")
-        temp = temp.replacingOccurrences(of: "Ģ", with: "G")
-        temp = temp.replacingOccurrences(of: "ģ", with: "g")
-        temp = temp.replacingOccurrences(of: "Ķ", with: "k")
-        temp = temp.replacingOccurrences(of: "ē", with: "e")
-        temp = temp.replacingOccurrences(of: "ķ", with: "k")
-        
-        temp = temp.replacingOccurrences(of: "Ņ", with: "N")
-        temp = temp.replacingOccurrences(of: "ņ", with: "n")
-        temp = temp.replacingOccurrences(of: "Š", with: "S")
-        temp = temp.replacingOccurrences(of: "š", with: "s")
-        temp = temp.replacingOccurrences(of: "Ž", with: "Z")
-        temp = temp.replacingOccurrences(of: "ž", with: "z")
-        
-        
-        return temp
-    }
     
     func demo2(){
         
@@ -131,26 +96,6 @@ class WatherViewController: UIViewController {
             print("Error Parsing City Data")
         }
         
-    }
-    public func activityIndicator(style: UIActivityIndicatorView.Style = .medium,
-                                  frame: CGRect? = nil,
-                                  center: CGPoint? = nil) -> UIActivityIndicatorView {
-        
-        // 2
-        let activityIndicatorView = UIActivityIndicatorView(style: style)
-        
-        // 3
-        if let frame = frame {
-            activityIndicatorView.frame = frame
-        }
-        
-        // 4
-        if let center = center {
-            activityIndicatorView.center = center
-        }
-        
-        // 5
-        return activityIndicatorView
     }
     
     func  getWeather(country: String){
@@ -499,74 +444,7 @@ class WatherViewController: UIViewController {
     
     @IBAction func go(_ sender: Any) {
         tabView()
-        
-        //        var text = self.searchText.text!
-        //        text = text.lowercased()
-        //        //        print(text)
-        //        var flag = false
-        //        for x in city{
-        //            var temp = x.name
-        //            temp = temp.lowercased()
-        //            if(temp == text)
-        //            {
-        //                cityName = x.name
-        //                longitude = x.longitude
-        //                latitude = x.latitude
-        //                flag = true
-        //                break
-        //            }
-        //
-        //        }
-        //        if(flag)
-        //        {
-        //            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        //            let vc = storyBoard.instantiateViewController(withIdentifier: "CityDetails") as! CityDetailsViewController
-        //            vc.cityName = cityName
-        //            vc.latitude = latitude
-        //            vc.longitude = longitude
-        //
-        //            self.navigationController?.pushViewController(vc, animated: true)
-        //        }
-        //        else
-        //        {
-        //            self.showToast(message: "Please Select a Valid City", font: .systemFont(ofSize: 18.0))
-        //        }
-        //
-        
-        //        var text = self.searchText.text!
-        //        text = text.lowercased()
-        //        //        print(text)
-        //        var flag = false
-        //        for x in city{
-        //            var temp = x.name
-        //            temp = temp.lowercased()
-        //            if(temp == text)
-        //            {
-        //                CommonData.shared.cityName = x.name
-        //                CommonData.shared.lat = x.latitude
-        //                CommonData.shared.long = x.longitude
-        //                flag = true
-        //                break
-        //            }
-        //
-        //        }
-        //        if(flag)
-        //        {
-        //            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        //            let vc = storyBoard.instantiateViewController(withIdentifier: "tabBar") as! TabBarController
-        //            //                  vc.cityName = cityName
-        //            //                  vc.lat = latitude
-        //            //                  vc.long = longitude
-        //
-        //
-        //            self.navigationController?.pushViewController(vc, animated: true)
-        //        }
-        //        else
-        //        {
-        //            self.showToast(message: "Please Select a Valid City", font: .systemFont(ofSize: 18.0))
-        //        }
-        
-        
+
     }
     
     

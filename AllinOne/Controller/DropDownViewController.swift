@@ -29,15 +29,7 @@ class DropDownViewController: UIViewController {
     var countries = [Country]()
     var countryCode = ""
     
-    func newJson() {
-        let url = NSURL(string: "https://restcountries.com/v3.1/all")
-        
-        let data = NSData(contentsOf: url! as URL)
-        var tmpValues = try! JSONSerialization.jsonObject(with: data! as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
-        tmpValues = tmpValues.reversed() as NSArray
-        //             reloadInputViews()
-        countries = try! JSONDecoder().decode([Country].self, from: data! as Data)
-    }
+
     
     @IBAction func isTappedDropDownButton(_ sender: Any) {
         myDropDown.show()
@@ -88,28 +80,7 @@ class DropDownViewController: UIViewController {
             print(x.name.common)
         }
     }
-    public func activityIndicator(style: UIActivityIndicatorView.Style = .medium,
-                                  frame: CGRect? = nil,
-                                  center: CGPoint? = nil) -> UIActivityIndicatorView {
-        
-        // 2
-        let activityIndicatorView = UIActivityIndicatorView(style: style)
-        
-        // 3
-        if let frame = frame {
-            activityIndicatorView.frame = frame
-        }
-        
-        // 4
-        if let center = center {
-            activityIndicatorView.center = center
-        }
-        
-        // 5
-        return activityIndicatorView
-    }
-    
-    
+
     @IBAction func goBtn(_ sender: Any) {
         
         
