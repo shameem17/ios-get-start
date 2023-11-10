@@ -11,53 +11,10 @@ import Foundation
 import NotificationCenter
 import DropDown
 
-struct Location: Decodable {
-    var name: String
-    var localtime: String
-}
-struct Condition: Decodable{
-    var text: String
-    var icon: String
-}
-
-struct Current: Decodable {
-    var temp_c: Float
-    var temp_f: Float
-    var is_day: Int
-    var condition: Condition
-}
-
-struct Weather: Decodable {
-    var current: Current
-    var location: Location
-}
 
 
 
-struct City: Codable {
-    var name: String
-    var state_or_region: String
-    var latitude: Double
-    var longitude: Double
-}
-extension City {
-    init(from dictionary: [String: Any]) {
-        name = dictionary["name"] as? String ?? ""
-        state_or_region = dictionary["state_or_region"] as? String ?? ""
-        latitude = dictionary["latitude"] as? Double ?? 0.0
-        longitude = dictionary["longitude"] as? Double ?? 0.0
-        
-    }
-}
-extension City {
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(name, forKey: .name)
-        try container.encode(state_or_region, forKey: .state_or_region)
-        try container.encode(latitude, forKey: .latitude)
-        try container.encode(longitude, forKey: .longitude)
-    }
-}
+
 struct Town: Decodable {
     var name: String
 }

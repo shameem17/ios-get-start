@@ -24,7 +24,6 @@
 		1D1920C02AD6AB7B00F708DD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1920BF2AD6AB7B00F708DD /* MapViewController.swift */; };
 		1D6CBBDB2AF0FC4E00FBA3ED /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CBBDA2AF0FC4E00FBA3ED /* StartingViewController.swift */; };
 		1DA84ED52AD9204700DE2926 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA84ED42AD9204700DE2926 /* StartViewController.swift */; };
-		1DBA915E2AF1425400DA1D10 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA915D2AF1425400DA1D10 /* TabBarController.swift */; };
 		1DBB89662ADECECE00786E6B /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB89652ADECECE00786E6B /* CountryViewController.swift */; };
 		1DBD8C812AD8131400D25AB7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD8C802AD8131400D25AB7 /* CalculatorViewController.swift */; };
 		1DC8A0342AE94BD8007360DC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A0332AE94BD8007360DC /* SearchViewController.swift */; };
@@ -34,6 +33,10 @@
 		1DDA90072ADFADFA00E2C4C5 /* DropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA90062ADFADFA00E2C4C5 /* DropDownViewController.swift */; };
 		1DDA90092ADFC13400E2C4C5 /* WatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA90082ADFC13400E2C4C5 /* WatherViewController.swift */; };
 		1DEB8DB52AE2AF1C007B6EE4 /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEB8DB42AE2AF1C007B6EE4 /* CityDetailsViewController.swift */; };
+		1DEE97B82AFE4ED900EB3902 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE97B72AFE4ED900EB3902 /* CommonData.swift */; };
+		1DEE97BA2AFE4F7C00EB3902 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE97B92AFE4F7C00EB3902 /* City.swift */; };
+		1DEE97BC2AFE4FB500EB3902 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE97BB2AFE4FB500EB3902 /* Weather.swift */; };
+		1DEE97BE2AFE4FFF00EB3902 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE97BD2AFE4FFF00EB3902 /* TabBarController.swift */; };
 		1DFA027C2AEBDE400087CE57 /* MapTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA027B2AEBDE400087CE57 /* MapTabViewController.swift */; };
 		1DFA027E2AEBDE5B0087CE57 /* WeatherTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA027D2AEBDE5B0087CE57 /* WeatherTabViewController.swift */; };
 		1DFA02802AEBDE710087CE57 /* TourismTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA027F2AEBDE710087CE57 /* TourismTabViewController.swift */; };
@@ -81,7 +84,6 @@
 		1D1920BF2AD6AB7B00F708DD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1D6CBBDA2AF0FC4E00FBA3ED /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		1DA84ED42AD9204700DE2926 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		1DBA915D2AF1425400DA1D10 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1DBB89652ADECECE00786E6B /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		1DBD8C802AD8131400D25AB7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		1DC8A0332AE94BD8007360DC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,10 @@
 		1DDA90062ADFADFA00E2C4C5 /* DropDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownViewController.swift; sourceTree = "<group>"; };
 		1DDA90082ADFC13400E2C4C5 /* WatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatherViewController.swift; sourceTree = "<group>"; };
 		1DEB8DB42AE2AF1C007B6EE4 /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
+		1DEE97B72AFE4ED900EB3902 /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
+		1DEE97B92AFE4F7C00EB3902 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		1DEE97BB2AFE4FB500EB3902 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1DEE97BD2AFE4FFF00EB3902 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1DFA027B2AEBDE400087CE57 /* MapTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabViewController.swift; sourceTree = "<group>"; };
 		1DFA027D2AEBDE5B0087CE57 /* WeatherTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTabViewController.swift; sourceTree = "<group>"; };
 		1DFA027F2AEBDE710087CE57 /* TourismTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismTabViewController.swift; sourceTree = "<group>"; };
@@ -158,32 +164,10 @@
 		1D0AF26A2AD5546F005124A7 /* AllinOne */ = {
 			isa = PBXGroup;
 			children = (
-				1D0AF26B2AD5546F005124A7 /* AppDelegate.swift */,
-				1DDA90062ADFADFA00E2C4C5 /* DropDownViewController.swift */,
-				1D0AF26D2AD5546F005124A7 /* SceneDelegate.swift */,
-				1D0AF29D2AD55989005124A7 /* CollectionViewController.swift */,
-				1D0AF2A12AD57BDB005124A7 /* ImageViewController.swift */,
-				1DCBC0332ADD0D3500C24B14 /* MyTableViewCell.swift */,
-				1DCBC0312ADD0A2800C24B14 /* FullTableTableViewController.swift */,
-				1DDA90082ADFC13400E2C4C5 /* WatherViewController.swift */,
-				1DBB89652ADECECE00786E6B /* CountryViewController.swift */,
-				1D0AF29F2AD55D17005124A7 /* MyCollectionViewCell.swift */,
-				1DBA915D2AF1425400DA1D10 /* TabBarController.swift */,
-				1DC8A0332AE94BD8007360DC /* SearchViewController.swift */,
-				1DFA027D2AEBDE5B0087CE57 /* WeatherTabViewController.swift */,
-				1D1920BF2AD6AB7B00F708DD /* MapViewController.swift */,
-				1D6CBBDA2AF0FC4E00FBA3ED /* StartingViewController.swift */,
-				1DFA027B2AEBDE400087CE57 /* MapTabViewController.swift */,
-				1DFA027F2AEBDE710087CE57 /* TourismTabViewController.swift */,
-				1DEB8DB42AE2AF1C007B6EE4 /* CityDetailsViewController.swift */,
-				1DBD8C802AD8131400D25AB7 /* CalculatorViewController.swift */,
-				1DA84ED42AD9204700DE2926 /* StartViewController.swift */,
-				1D1920BD2AD66F7000F708DD /* WebViewController.swift */,
-				1D0AF29B2AD554E3005124A7 /* TableViewController.swift */,
-				1D0AF26F2AD5546F005124A7 /* ViewController.swift */,
-				1D0AF2712AD5546F005124A7 /* Main.storyboard */,
+				1DEE97B62AFE4EAE00EB3902 /* Model */,
+				1DEE97BF2AFE501200EB3902 /* View */,
+				1DEE97C02AFE511D00EB3902 /* Controller */,
 				1D0AF2742AD55471005124A7 /* Assets.xcassets */,
-				1D0AF2762AD55471005124A7 /* LaunchScreen.storyboard */,
 				1D0AF2792AD55471005124A7 /* Info.plist */,
 				1DCF7C0F2AEA74B700307A51 /* GoogleService-Info.plist */,
 			);
@@ -206,6 +190,55 @@
 				1D0AF28F2AD55471005124A7 /* Info.plist */,
 			);
 			path = AllinOneUITests;
+			sourceTree = "<group>";
+		};
+		1DEE97B62AFE4EAE00EB3902 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D0AF26B2AD5546F005124A7 /* AppDelegate.swift */,
+				1D0AF26D2AD5546F005124A7 /* SceneDelegate.swift */,
+				1DEE97B72AFE4ED900EB3902 /* CommonData.swift */,
+				1DEE97B92AFE4F7C00EB3902 /* City.swift */,
+				1DEE97BB2AFE4FB500EB3902 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DEE97BF2AFE501200EB3902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DCBC0332ADD0D3500C24B14 /* MyTableViewCell.swift */,
+				1D0AF29F2AD55D17005124A7 /* MyCollectionViewCell.swift */,
+				1D0AF2762AD55471005124A7 /* LaunchScreen.storyboard */,
+				1D0AF2712AD5546F005124A7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DEE97C02AFE511D00EB3902 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DC8A0332AE94BD8007360DC /* SearchViewController.swift */,
+				1D6CBBDA2AF0FC4E00FBA3ED /* StartingViewController.swift */,
+				1DEE97BD2AFE4FFF00EB3902 /* TabBarController.swift */,
+				1DFA027B2AEBDE400087CE57 /* MapTabViewController.swift */,
+				1D1920BF2AD6AB7B00F708DD /* MapViewController.swift */,
+				1DDA90082ADFC13400E2C4C5 /* WatherViewController.swift */,
+				1DFA027D2AEBDE5B0087CE57 /* WeatherTabViewController.swift */,
+				1DEB8DB42AE2AF1C007B6EE4 /* CityDetailsViewController.swift */,
+				1DBB89652ADECECE00786E6B /* CountryViewController.swift */,
+				1DFA027F2AEBDE710087CE57 /* TourismTabViewController.swift */,
+				1DCBC0312ADD0A2800C24B14 /* FullTableTableViewController.swift */,
+				1DBD8C802AD8131400D25AB7 /* CalculatorViewController.swift */,
+				1D0AF2A12AD57BDB005124A7 /* ImageViewController.swift */,
+				1DDA90062ADFADFA00E2C4C5 /* DropDownViewController.swift */,
+				1DA84ED42AD9204700DE2926 /* StartViewController.swift */,
+				1D1920BD2AD66F7000F708DD /* WebViewController.swift */,
+				1D0AF29B2AD554E3005124A7 /* TableViewController.swift */,
+				1D0AF29D2AD55989005124A7 /* CollectionViewController.swift */,
+				1D0AF26F2AD5546F005124A7 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		20F881DA5EEF7CC768E94E75 /* Pods */ = {
@@ -472,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDA90092ADFC13400E2C4C5 /* WatherViewController.swift in Sources */,
+				1DEE97BE2AFE4FFF00EB3902 /* TabBarController.swift in Sources */,
 				1D0AF2702AD5546F005124A7 /* ViewController.swift in Sources */,
 				1DBD8C812AD8131400D25AB7 /* CalculatorViewController.swift in Sources */,
 				1DDA90072ADFADFA00E2C4C5 /* DropDownViewController.swift in Sources */,
@@ -485,9 +519,11 @@
 				1DA84ED52AD9204700DE2926 /* StartViewController.swift in Sources */,
 				1D0AF2A22AD57BDB005124A7 /* ImageViewController.swift in Sources */,
 				1DCBC0342ADD0D3500C24B14 /* MyTableViewCell.swift in Sources */,
+				1DEE97BC2AFE4FB500EB3902 /* Weather.swift in Sources */,
+				1DEE97BA2AFE4F7C00EB3902 /* City.swift in Sources */,
+				1DEE97B82AFE4ED900EB3902 /* CommonData.swift in Sources */,
 				1D1920C02AD6AB7B00F708DD /* MapViewController.swift in Sources */,
 				1DCBC0322ADD0A2800C24B14 /* FullTableTableViewController.swift in Sources */,
-				1DBA915E2AF1425400DA1D10 /* TabBarController.swift in Sources */,
 				1DFA02802AEBDE710087CE57 /* TourismTabViewController.swift in Sources */,
 				1D0AF26E2AD5546F005124A7 /* SceneDelegate.swift in Sources */,
 				1D0AF29C2AD554E3005124A7 /* TableViewController.swift in Sources */,
